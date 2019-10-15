@@ -78,14 +78,16 @@ hr {
   overflow: visible;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  text-align: left;
 }
 
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 
@@ -205,10 +207,11 @@ figure {
   margin: 0 0 1rem;
 }
 
-img {
+/*img {
   vertical-align: middle;
   border-style: none;
-}
+}*/
+
 
 svg:not(:root) {
   overflow: hidden;
@@ -216,6 +219,28 @@ svg:not(:root) {
 
 table {
   border-collapse: collapse;
+  width: 50%;
+  padding: 80px;
+  margin: 10px 0;
+}
+
+.kontejner {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-between;
+}
+
+.vzpominka {
+
+}
+
+
+.paticka {
+  font-size: 14px;
+  padding: 50px;
+  margin: 30px;
 }
 
 caption {
@@ -227,9 +252,8 @@ caption {
 }
 
 th {
-  text-align: inherit;
+  text-align: left;
 }
-
 label {
   display: inline-block;
   margin-bottom: .5rem;
@@ -362,13 +386,15 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
   color: inherit;
+  text-align: left;
 }
 
 h1, .h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  text-align: left;
 }
 
 h2, .h2 {
@@ -1667,7 +1693,7 @@ pre code {
 }
 
 .table {
-  width: 100%;
+  width: 50%;
   max-width: 100%;
   margin-bottom: 1rem;
   background-color: transparent;
